@@ -1,4 +1,4 @@
-# 6storage-api
+# graphql-typeorm
 
 ## Table of Contents
 
@@ -9,38 +9,40 @@
 
 ## About <a name = "about"></a>
 
-Write about 1-2 paragraphs describing the purpose of your project.
+Boilerplate repository for Graphql setup with apollo server, typeorm, and sql server. Get started with development of graphql server easily within no time.
 
 ## Getting Started <a name = "getting_started"></a>
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See [deployment](#deployment) for notes on how to deploy the project on a live system.
+Clone the repository [repository](#https://github.com/nagurshaik-git/graphql-typeorm.git) into your local machine.
+
+Change the database configuration setup in ormconfig.json file in the project.
+
+See [deployment](#deployment) for notes on how to deploy the project on a live system.
 
 ### Prerequisites
 
-What things you need to install the software and how to install them.
-
-```
-Give examples
-```
+- Nodejs
+- typescript
+- sql server
 
 ### Installing
 
 A step by step series of examples that tell you how to get a development env running.
 
-Say what the step will be
+Install node js LTS version and run the below command
 
 ```
-Give the example
+npm install
 ```
 
-And repeat
+Then for running local application, run the bwlo command
 
 ```
-until finished
+npm start
 ```
 
-End with an example of getting some data out of the system or using it for a little demo.
+Now you are running graphql server on [local server](#http://localhost:3000/api).
 
 ## Usage <a name = "usage"></a>
 
-Add notes about how to use the system.
+You are all setup to develop graphql api.
