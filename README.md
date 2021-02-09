@@ -9,7 +9,7 @@
 
 ## About <a name = "about"></a>
 
-Boilerplate repository for Graphql setup with apollo server, typeorm, and sql server. Get started with development of graphql server easily within no time.
+Boilerplate repository for Graphql  setup with apollo server, typeorm, and sql server. Get started with development of graphql server easily within no time.
 
 ## Getting Started <a name = "getting_started"></a>
 
