@@ -1,6 +1,6 @@
 import { Entity, BaseEntity, PrimaryGeneratedColumn, Column, ManyToOne, JoinColumn, OneToMany } from "typeorm";
 
-import { CaddyClient } from "../client-entities/caddy-client";
+import { Client } from "../client-entities/client";
 
 @Entity({ name: 'TenantAuthTokenDetails' })
 export class AuthTokenDetails extends BaseEntity {
@@ -16,7 +16,4 @@ export class AuthTokenDetails extends BaseEntity {
     @Column({ name: 'RowStatus' })
     rowStatus: string;
 
-    @ManyToOne(() => CaddyClient, Client => Client.locations)
-    @JoinColumn({ name: "clientId" })
-    caddyClient: CaddyClient;
 }

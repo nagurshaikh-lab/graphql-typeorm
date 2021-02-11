@@ -1,8 +1,6 @@
 import { Entity, BaseEntity, PrimaryGeneratedColumn, Column, JoinColumn, OneToMany } from "typeorm";
 import { ObjectType, Field, ID } from "type-graphql";
 
-import { CaddyClient } from '../client-entities/caddy-client';
-import { ManyToOne } from "typeorm";
 import { Building } from "./building";
 
 @Entity( { name: 'Location' } )
@@ -26,11 +24,6 @@ export class Location extends BaseEntity {
 
     @Column( { name: 'deleted' } )
     deleted: Boolean;
-
-    @Field( () => CaddyClient )
-    @ManyToOne( () => CaddyClient, Client => Client.locations )
-    @JoinColumn( { name: "clientId" } )
-    caddyClient: CaddyClient;
 
     @Field( () => [Building] )
     @OneToMany( () => Building, building => building.location )

@@ -3,9 +3,9 @@ import { ObjectType, Field, ID } from "type-graphql";
 
 import { Location } from '../facility-info/location';
 
-@Entity({ name: 'CaddyClientDetail' })
+@Entity({ name: 'ClientDetail' })
 @ObjectType()
-export class CaddyClient extends BaseEntity {
+export class Client extends BaseEntity {
   @Field(() => String)
   @PrimaryGeneratedColumn('uuid')
   clientId: string;
@@ -32,9 +32,4 @@ export class CaddyClient extends BaseEntity {
 
   @Column({ name: 'IsActive' })
   deleted: Boolean;
-
-  @Field(() => [Location])
-  @OneToMany(() => Location, loc => loc.caddyClient)
-  @JoinColumn({ referencedColumnName: "clientId" })
-  locations: Location[];
 }
